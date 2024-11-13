@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/default.css">
-    <link rel="stylesheet" href="./styles/index.css">
-
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
+
+    <!--CSS SWIPER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
     <title>Recicla+</title>
 </head>
@@ -21,11 +24,13 @@
         <div class="menu">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre nós</a>
+            <a href="#produtos">Produtos</a>
             <a href="#doar-residuos">Doar resíduos</a>
 
             <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
         </div>
     </header>
+
     <section id="home">
         <div class="blur"></div>
         <div class="text-container-home">
@@ -33,6 +38,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt culpa nam saepe voluptatem ad, nobis eaque. Placeat blanditiis quae ratione iusto perferendis, non in id corrupti, tenetur fugiat quaerat.</p>
         </div>
     </section>
+
     <section id="sobre">
         <h2>Sobre nós</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae et sint quibusdam at, reiciendis numquam quis a animi porro perspiciatis quo dignissimos temporibus quam aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis impedit ullam, accusamus laudantium eaque adipisci ut suscipit dolorum alias in fuga eligendi ducimus molestiae assumenda possimus? Ullam.<p>
@@ -42,6 +48,7 @@
             <li>
                 <h3>lorem ipsum</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
+
             </li>
             <li>
                 <h3>lorem ipsum</h3>
@@ -57,14 +64,67 @@
             </li>
         </ul>
     </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="img-container">
+                    <img src="imgs/foto-user.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <h3>Produto</h3>
+                <div class="row-container">
+                    <a href="#">Comprar</a>
+
+                    <span>R$00,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="imgs/foto-user.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <h3>Produto</h3>
+                <div class="row-container">
+                    <a href="#">Comprar</a>
+
+                    <span>R$00,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="imgs/foto-user.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <h3>Produto</h3>
+                <div class="row-container">
+                    <a href="#">Comprar</a>
+
+                    <span>R$00,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="imgs/foto-user.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <h3>Produto</h3>
+                <div class="row-container">
+                    <a href="#">Comprar</a>
+
+                    <span>R$00,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="doar-residuos">
         <img src="imgs/form-img.png" alt="Ilustração">
 
         <form>
-            <div class="input-container">
-                <label for="residuo">Resíduo:</label>
-                <input type="text" name="residuo" id="residuo" placeholder="Digite o nome do resísuo">
-            </div>
+            <h2>Doar resíduos</h2>
             <div class="input-container">
                 <label for="tipo">Tipo:</label>
                 <select name="tipo" id="tipo">
@@ -72,7 +132,12 @@
                     <option value="plastico">Plástico</option>
                     <option value="metal">Metal</option>
                     <option value="paple">Papel</option>
+                    <option value="vidro">Vidro</option>
                 </select>
+            </div>
+            <div class="input-container">
+                <label for="residuo">Resíduo:</label>
+                <input type="text" name="residuo" id="residuo" placeholder="Digite o nome do resísuo">
             </div>
             <div class="input-container">
                 <label for="quantidade">Quantidade: (kg)</label>
@@ -83,5 +148,32 @@
             </button>
         </form>
     </section>
+
+    <!--JAVASCRIPT SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Define a direção do slide para horizontal
+            direction: 'horizontal',
+            // Ativa o loop, permitindo que o carrossel repita os slides infinitamente
+            loop: true,
+
+            // Define a paginação (os pontos indicadores de slides)
+            pagination: {
+                el: '.swiper-pagination', // Seleciona o elemento de paginação
+            },
+
+            // Define os botões de navegação (avançar e voltar)
+            navigation: {
+                nextEl: '.swiper-button-next', // Botão para avançar
+                prevEl: '.swiper-button-prev', // Botão para voltar
+            },
+
+            // Define a barra de rolagem (scrollbar)
+            scrollbar: {
+                el: '.swiper-scrollbar', // Seleciona o elemento da barra de rolagem
+            },
+        })
+    </script>
 </body>
 </html>
