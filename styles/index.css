@@ -147,6 +147,7 @@
 }
 
 .cards-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -307,4 +308,57 @@
 
 .submit-btn:active {
     background-color: #187b1b;
+}
+
+/* FOOTER */
+#contato {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    gap: 2rem;
+    padding: 2em 10%;
+    border-top: 1px solid #8a8a8a;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    color: #187b1b;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.footer-box a {
+    color: #187b1b99;
+    margin-bottom: .8rem;
+    transition: all .6s ease;
+}
+
+.footer-box a:hover {
+    transform: translateY(-5px);
+    color: #187b1b;
+
+}
+
+.social a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: #187b1b;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-right: 14px;
+    transition: transform 1s;
+}
+
+.social a:hover {
+    transform: rotate3d(0, 0, 1, 360deg) scale(1.06);
+    color: #fff;
 }
