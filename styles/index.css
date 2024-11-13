@@ -332,6 +332,7 @@
 }
 
 .footer-box a {
+    font-weight: bold;
     color: #187b1b99;
     margin-bottom: .8rem;
     transition: all .6s ease;

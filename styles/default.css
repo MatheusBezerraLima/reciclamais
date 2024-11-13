@@ -53,6 +53,10 @@ header{
     width: 70px;
 }
 
+.box-logo:hover {
+    transform: translateY(0px);
+}
+
 .menu{
     width: fit-content;
     display: flex;
