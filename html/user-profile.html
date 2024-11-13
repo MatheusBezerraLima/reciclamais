@@ -7,24 +7,71 @@
     <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/user-profile.css">
 
+     <!--FONT AWESOME-->
+     <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
+
     <title>Perfil</title>
 </head>
 <body>
+    <header>
+        <div class="box-logo">
+            <img src="../imgs/logo-semfundo.png" alt="logo">
+        </div>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#doar-residuos">Doar resíduos</a>
+
+            <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
+        </div>
+    </header>
+
     <main>
-        <div class="user-info">
-            <div class="foto-user">
-                <img src="../imgs/foto-user.jpg" alt="">
-            </div>
-            <span> <h1>Matheus Bezerra Lima</h1> </span>
+      <div class="user-infos">
 
-            <div class="info-points">
-                <h2>3645 <span>pts</span></h2>
+        <div class="identification-user">
+            <div class="photo-user">
+                <p>ML</p>
             </div>
+            <div class="name_xp-user">
+                <h1>Matheus Bezerra Lima</h1>
+                <div class="xp-infos">
+                    <span>XP 3656 / 4000</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
 
-            <div class="btn-trocar"> Trocar pontos </div>
+        <div class="title-user">
+            <h2>Iniciante Sustentável</h2>
+        </div>
+      </div>
+
+      <div class="content-profile-body">
+        <div class="box-slick-slider">
+            <div class="slick-slider">
+                <button type="button"><h5>Plástico</h5><span>1</span></button>
+                <button type="button"><h5>Metais</h5><span>0</span></button>
+                <button type="button"><h5>Papelão</h5><span>0</span></button>
+                <button type="button"><h5>Papéis</h5><span>0</span></button>
+                <button type="button"><h5>Vidro</h5><span>0</span></button>
+                <button type="button"><h5>Eletrônicos</h5><span>0</span></button>
+                <button type="button"><h5>Pilhas / Baterias</h5><span>0</span></button>
+                <button type="button"><h5>Têxteis</h5><span>0</span></button>
+                <button type="button"><h5>Óleo Usado</h5><span>0</span></button>
+                <button type="button"><h5>Madeira</h5><span>0</span></button>
+            </div>
+        </div>
+
+        <div class="box-message-empty">
+            
+                <h6>Você ainda não doou nenhum item dessa categoria. Comece agora mesmo!</h6>
+
+                <a href="../index.html#doar-residuos">Quero fazer uma doação</a>
 
         </div>
-        <div class="user-score"></div>
+      </div>
     </main>
 </body>
 </html>

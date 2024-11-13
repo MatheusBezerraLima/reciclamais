@@ -1,76 +1,155 @@
 body{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 main{
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-main > div{
-    border-radius: 15px;
-    box-shadow: 3px 2px 24px -3px rgba(0, 0, 0, 0.596);
-    overflow: hidden;
-}
-
-.user-info{
-    width: 40%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    color: #187b1b;
-    flex-direction: column;
-    font-size: 18px;
-}
-
-.user-score{
-    width: 58%;
-    height: 100%;
-    background-color: #187b1b;
-}
-
-.foto-user{
-    width: 300px;
-    height: 300px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #187b1b ;
-}
-.info-points{
     width: 100%;
+    margin-top: 74px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #ffffff;
+    gap: 1rem;
 }
-
-.info-points > h2{
-    background-color: #187b1b;
-    color: white;
-    padding: 2px 10px;
-    font-size: 45px;
-    margin-top: 10px;
+main > div {
     border-radius: 15px;
+    width: 100%;
+    max-width: 920px;
+    padding: 1rem;
+    background-color: #56695eb7;
+    box-shadow: 0px 0px 22px 2px rgba(0, 0, 0, 0.24);
+}
+.user-infos{
+    display: flex;
+    justify-content: space-around;
+}
+    .identification-user{
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        gap: 1rem;
+    }
+        .photo-user{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(123, 124, 123);
+            border-radius: 50%;
+            border: 2px solid #187b1bd7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+        .name_xp-user{
+            display: flex;
+            flex-direction: column;
+        }
+            .name_xp-user > h1{
+                font-size: 1.5rem;
+            }
+            .xp-infos > span{
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+            .progress-bar{
+                width: 300px;
+                height: 12px;
+                background-color: white;
+                border-radius: 10px;
+            }
+.title-user{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #7D7E80, #A9A9A9);
 }
 
-.btn-trocar{
-    color: white;
-    background-color: #187b1b;
+.content-profile-body{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 50px;
+    height: fit-content;
+}
+
+.box-slick-slider{
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 106px;
 }
 
-.btn-trocar:hover{
-    background-color: #187b1b99;
-    cursor: pointer;
+.slick-slider{
+    width: 100%;
+    max-width: 850px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 0.93rem;
 }
+    .slick-slider > button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: calc( 100%  / 5);
+        min-width: 158px;
+        max-width: 158px;
+        height: fit-content;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        padding: 15px 25px;
+        color: #fff;
+        background-color: rgb(167, 169, 166);
+        border-radius: 5px;
+        border: none;
+    }
+    .slick-slider > button:hover{
+        background-color: #187b1bd7;
+        color: #fbf9f9;
+        cursor: pointer;
+    }
+    .slick-slider > button > span{
+        padding: 0.2rem 0.5rem;
+        border-radius: 50%;
+        font-size: 0.6rem;
+        background-color: #353535;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+.box-message-empty{
+    margin-top: 2rem;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+    .box-message-empty > h6{
+        font-size: 1rem;
+        color: #ffffffe1;
+    }
+    .box-message-empty > a{
+        padding:10px 15px;
+        background-color: #187b1b;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    .box-message-empty > a:hover{
+        background-color: #187b1b99;
+    }

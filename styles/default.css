@@ -41,6 +41,7 @@ header{
     font-size: 1.3em;
     color: #187b1b;
     position: fixed;
+    top: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     z-index: 9;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Níveis Metálicos Radiantes</title>
+  <style>
+    .level-container {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    .level {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    .level1 { background: linear-gradient(45deg, #7D7E80, #A9A9A9); } /* Nível 1 - Básico */
+    .level2 { background: linear-gradient(45deg, #929292, #C0C0C0); } /* Nível 2 - Prata Fosca */
+    .level3 { background: linear-gradient(45deg, #8C7A5B, #B08D57); } /* Nível 3 - Bronze */
+    .level4 { background: linear-gradient(45deg, #A97142, #CD853F); } /* Nível 4 - Bronze Antigo */
+    .level5 { background: linear-gradient(45deg, #B87333, #D2691E); } /* Nível 5 - Cobre */
+    .level6 { background: linear-gradient(45deg, #DAA520, #FFD700); } /* Nível 6 - Ouro Claro */
+    .level7 { background: linear-gradient(45deg, #FFD700, #FFB400); } /* Nível 7 - Ouro Puro */
+    .level8 { background: linear-gradient(45deg, #FFF8DC, #E5E4E2, #D9E1E2); color: #333; } /* Nível 8 - Ouro-Platina Radiante */
+    .level9 { background: linear-gradient(135deg, #C0C0C0, #E6E6FA, #FFFFFF); color: #333; } /* Nível 9 - Platina Diamante */
+    .level10 { 
+      background: linear-gradient(45deg, #FFD700, #8A2BE2, #4B0082, #E6E8FA, #FFFFFF);
+      color: #FFD700; 
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.6), 0px 0px 8px rgba(255, 223, 0, 0.8);
+      border: 1px solid #FFD700;
+      box-shadow: 0px 0px 15px rgba(255, 223, 0, 0.6), 0px 0px 30px rgba(138, 43, 226, 0.4);
+    } /* Nível 10 - Lendário */
+  </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Níveis Metálicos Radiantes</h1>
+<div class="level-container">
+  <div class="level level1">Nível 1 - Básico</div>
+  <div class="level level2">Nível 2 - Prata Fosca</div>
+  <div class="level level3">Nível 3 - Bronze</div>
+  <div class="level level4">Nível 4 - Bronze Antigo</div>
+  <div class="level level5">Nível 5 - Cobre</div>
+  <div class="level level6">Nível 6 - Ouro Claro</div>
+  <div class="level level7">Nível 7 - Ouro Puro</div>
+  <div class="level level8">Nível 8 - Ouro-Platina Radiante</div>
+  <div class="level level9">Nível 9 - Platina Diamante</div>
+  <div class="level level10">Nível 10 - Lendário</div>
+</div>
+
+</body>
+</html>
