@@ -11,6 +11,7 @@ header a{
     text-decoration: none;
     font-size: 0.8em;
     font-weight: bold;
+    padding: 1em;
     color: #187b1b;
     transition: 0.5s;
 }
@@ -18,6 +19,10 @@ header a{
 header a:hover {
     color: #187b1b99;
     transform: translateY(-4px);
+
+}
+header a:active {
+    transform: translateY(4px);
 
 }
 img {
@@ -28,7 +33,7 @@ img {
 
 header{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 2px 40px;
     display: flex;
     flex-direction: row;
@@ -52,7 +57,7 @@ header{
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .user-icon{
     margin-left: 40px;

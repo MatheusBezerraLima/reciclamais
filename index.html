@@ -21,7 +21,7 @@
         <div class="menu">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre nós</a>
-            <a href="">Doar resíduos</a>
+            <a href="#doar-residuos">Doar resíduos</a>
 
             <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
         </div>
@@ -30,13 +30,14 @@
         <div class="blur"></div>
         <div class="text-container-home">
             <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt culpa nam saepe voluptatem ad, nobis eaque. Placeat blanditiis quae ratione iusto perferendis, non in id corrupti, tenetur fugiat quaerat.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt culpa nam saepe voluptatem ad, nobis eaque. Placeat blanditiis quae ratione iusto perferendis, non in id corrupti, tenetur fugiat quaerat.</p>
         </div>
     </section>
     <section id="sobre">
-        <h2>Sobre</h2>
+        <h2>Sobre nós</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae et sint quibusdam at, reiciendis numquam quis a animi porro perspiciatis quo dignissimos temporibus quam aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis impedit ullam, accusamus laudantium eaque adipisci ut suscipit dolorum alias in fuga eligendi ducimus molestiae assumenda possimus? Ullam.<p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae et sint quibusdam at, reiciendis numquam quis a animi porro perspiciatis quo dignissimos temporibus quam aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis impedit ullam, accusamus laudantium eaque adipisci ut suscipit dolorum alias in fuga eligendi ducimus molestiae assumenda possimus? Ullam.<p>
+        <h2>Como doar resíduos? <a href="#doar-residuos" class="btn">Doar resíduos</a></h2>
         <ul>
             <li>
                 <h3>lorem ipsum</h3>
@@ -55,6 +56,32 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
             </li>
         </ul>
+    </section>
+    <section id="doar-residuos">
+        <img src="imgs/form-img.png" alt="Ilustração">
+
+        <form>
+            <div class="input-container">
+                <label for="residuo">Resíduo:</label>
+                <input type="text" name="residuo" id="residuo" placeholder="Digite o nome do resísuo">
+            </div>
+            <div class="input-container">
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo">
+                    <option value="">Selecione um tipo</option>
+                    <option value="plastico">Plástico</option>
+                    <option value="metal">Metal</option>
+                    <option value="paple">Papel</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="quantidade">Quantidade: (kg)</label>
+                <input type="number" name="quantidade" id="quantidade" placeholder="Digite a quantidade do resísuo em kg">
+            </div>
+            <button class="submit-btn">
+                Enviar
+            </button>
+        </form>
     </section>
 </body>
 </html>
