@@ -43,8 +43,8 @@ const moveSlider = (event) => {
     const buttonWidth = buttonsSlider[0].offsetWidth 
     
     const fontSizeRoot = parseFloat(window.getComputedStyle(document.documentElement).fontSize); // Pega o font-size em pixels do root (html)
-    const gap = 0.94 * fontSizeRoot; // Calcula 0.93rem em pixels
-    
+    const gap = 0.9 * fontSizeRoot; // Calcula 0.93rem em pixels
+
     if(event.classList.contains('next')){
         currentIndex++
 
