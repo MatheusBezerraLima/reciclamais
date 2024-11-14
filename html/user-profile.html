@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/user-profile.css">
 
+    <script src="../scripts/userProfile.js" defer></script>
+
      <!--FONT AWESOME-->
      <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
 
@@ -19,9 +21,9 @@
         </div>
 
         <div class="menu">
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#doar-residuos">Doar resíduos</a>
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#sobre">Sobre nós</a>
+            <a href="../index.html#doar-residuos">Doar resíduos</a>
 
             <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
         </div>
@@ -51,17 +53,25 @@
       <div class="content-profile-body">
         <div class="box-slick-slider">
             <div class="slick-slider">
-                <button type="button"><h5>Plástico</h5><span>1</span></button>
-                <button type="button"><h5>Metais</h5><span>0</span></button>
-                <button type="button"><h5>Papelão</h5><span>0</span></button>
-                <button type="button"><h5>Papéis</h5><span>0</span></button>
-                <button type="button"><h5>Vidro</h5><span>0</span></button>
-                <button type="button"><h5>Eletrônicos</h5><span>0</span></button>
-                <button type="button"><h5>Pilhas / Baterias</h5><span>0</span></button>
-                <button type="button"><h5>Têxteis</h5><span>0</span></button>
-                <button type="button"><h5>Óleo Usado</h5><span>0</span></button>
-                <button type="button"><h5>Madeira</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)" class="enable"><h5>Plástico</h5><span>1</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Metais</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Papelão</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Papéis</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Vidro</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Eletrônicos</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Pilha/Bateria</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Têxteis</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Óleo Usado</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Madeira</h5><span>0</span></button>
             </div>
+
+            <button type="button" class="controlerSlider next" onclick="moveSlider(this)">
+                <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            </button>
+
+            <button type="button" class="controlerSlider back" onclick="moveSlider(this)">
+                <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </button>
         </div>
 
         <div class="box-message-empty">

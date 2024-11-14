@@ -3,6 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    
 }
 main{
     width: 100%;
@@ -25,14 +26,14 @@ main > div {
 .user-infos{
     display: flex;
     justify-content: space-around;
-}
-    .identification-user{
+
+    & .identification-user{
         display: flex;
         width: fit-content;
         flex-direction: row;
         gap: 1rem;
-    }
-        .photo-user{
+    
+        & .photo-user{
             width: 80px;
             height: 80px;
             background-color: rgb(123, 124, 123);
@@ -44,23 +45,29 @@ main > div {
             font-size: 2rem;
             color: #fff;
         }
-        .name_xp-user{
+
+        & .name_xp-user{
             display: flex;
             flex-direction: column;
-        }
-            .name_xp-user > h1{
+        
+            & .name_xp-user > h1{
                 font-size: 1.5rem;
             }
-            .xp-infos > span{
+            & .xp-infos > span{
                 font-size: 0.8rem;
                 font-weight: bold;
             }
-            .progress-bar{
+            & .progress-bar{
                 width: 300px;
                 height: 12px;
                 background-color: white;
                 border-radius: 10px;
             }
+        }
+
+    }
+}
+
 .title-user{
     width: fit-content;
     height: fit-content;
@@ -82,6 +89,39 @@ main > div {
     height: fit-content;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.controlerSlider{
+    position: absolute;
+    top: 1rem;
+    border-radius: 50%;
+    height: fit-content;
+    padding: 2px 6px ;
+    background-color: #353535e0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+    & i{
+        /* font-size: 0.9rem; */
+        background-color: red;
+        line-height: 0;
+        color: #ffffff;
+    }
+}
+
+.next{
+    right: -0.6rem;
+}
+
+.back{
+    left: -0.6rem;
+    display: none;
 }
 
 .slick-slider{
@@ -91,8 +131,8 @@ main > div {
     display: flex;
     flex-direction: row;
     gap: 0.93rem;
-}
-    .slick-slider > button{
+
+    & button{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -110,12 +150,12 @@ main > div {
         border-radius: 5px;
         border: none;
     }
-    .slick-slider > button:hover{
+    & button:hover{
         background-color: #187b1bd7;
         color: #fbf9f9;
         cursor: pointer;
     }
-    .slick-slider > button > span{
+    & button > span{
         padding: 0.2rem 0.5rem;
         border-radius: 50%;
         font-size: 0.6rem;
@@ -127,6 +167,11 @@ main > div {
         align-items: center;
         text-align: center;
     }
+    .enable{
+        background-color: #187b1bd7;
+        color: #fbf9f9;
+    }
+}
 
 .box-message-empty{
     margin-top: 2rem;
@@ -137,12 +182,12 @@ main > div {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-    .box-message-empty > h6{
+
+    & h6{
         font-size: 1rem;
         color: #ffffffe1;
     }
-    .box-message-empty > a{
+    & a{
         padding:10px 15px;
         background-color: #187b1b;
         border-radius: 10px;
@@ -150,6 +195,8 @@ main > div {
         color: #fff;
         font-weight: bold;
     }
-    .box-message-empty > a:hover{
+    & a:hover{
         background-color: #187b1b99;
     }
+}
+  
