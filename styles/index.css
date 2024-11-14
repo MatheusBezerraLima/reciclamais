@@ -1,7 +1,7 @@
 /* HOME */
 #home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/bg-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5%;
+    padding: 2em 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,12 +48,12 @@
 /* SOBRE */
 #sobre {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
+    padding: 2em 10%;
 }
 
 #sobre h2 {
@@ -66,6 +66,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
 #sobre .btn {
@@ -130,12 +132,12 @@
 /* PRODUTOS */
 #produtos {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 2em 10%;
 }
 
 #produtos h2 {
@@ -209,47 +211,21 @@
 
 .row-container a:hover {
     color: #187b1b;
-    transform: translateY(-4px);
-}
-
-.row-container a:active {
-    transform: translateY(4px);
 }
 
 .row-container span {
     color: #8a8a8a;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: #187b1b;
-    padding: 2em;
-    transition: .5s;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #187b1b;
-    transform: scale(1.2);
-    transition: .5s;
-}
-
 /* DOAR RESÍSUOS */
 #doar-residuos {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 5%;
-    padding: 0 10%;
-}
-
-#doar-residuos img {
-    width: 500px;
-}
-
-#doar-residuos form {
-    width: 500px;
+    padding: 2em 10%;
 }
 
 #doar-residuos form h2 {
@@ -362,4 +338,45 @@
 .social a:hover {
     transform: rotate3d(0, 0, 1, 360deg) scale(1.06);
     color: #fff;
+}
+
+@media (max-width: 1110px) {
+    #home .blur {
+        width: 100%;
+    }
+
+    .text-container-home {
+        width: 90%;
+    }
+
+    #sobre ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #doar-residuos {
+        grid-template-columns: 1fr;
+    }
+
+    #doar-residuos img {
+        display: none;
+    }
+
+    #contato {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contato {
+        grid-template-columns: 1fr;
+    }
 }

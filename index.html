@@ -14,11 +14,15 @@
 </head>
 <body>
     <header>
-        <a href="#home" class="box-logo">
-            <img src="./imgs/logo-semfundo.png" alt="logo">
-        </a>
+        <div class="header-container">
+            <a href="#home" class="box-logo">
+                <img src="./imgs/logo-semfundo.png" alt="logo">
+            </a>
 
-        <div class="menu">
+            <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+        </div>
+
+        <div class="menu" id="menu">
             <a href="#sobre">Sobre nós</a>
             <a href="#produtos">Produtos</a>
             <a href="#doar-residuos">Doar resíduos</a>
@@ -26,6 +30,7 @@
 
             <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
         </div>
+
     </header>
 
     <section id="home">
@@ -182,6 +187,14 @@
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
-    </footer>    
+    </footer>
+    
+    <script>
+        const menuIcon = document.getElementById("menu-icon")
+        const menu = document.getElementById("menu")
+        menuIcon.addEventListener("click", () => {
+            menu.style.display == "none" ? menu.style.display = "flex" : menu.style.display = "none"
+        })
+    </script>
 </body>
 </html>
