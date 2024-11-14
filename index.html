@@ -7,9 +7,6 @@
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
 
-    <!--CSS SWIPER-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
     <link rel="stylesheet" href="./styles/default.css">
     <link rel="stylesheet" href="./styles/index.css">
 
@@ -17,18 +14,23 @@
 </head>
 <body>
     <header>
-        <div class="box-logo">
-            <img src="./imgs/logo-semfundo.png" alt="logo">
+        <div class="header-container">
+            <a href="#home" class="box-logo">
+                <img src="./imgs/logo-semfundo.png" alt="logo">
+            </a>
+
+            <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
         </div>
 
-        <div class="menu">
-            <a href="#home">Home</a>
+        <div class="menu" id="menu">
             <a href="#sobre">Sobre nós</a>
             <a href="#produtos">Produtos</a>
             <a href="#doar-residuos">Doar resíduos</a>
+            <a href="#contato">Contato</a>
 
             <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
         </div>
+
     </header>
 
     <section id="home">
@@ -149,30 +151,49 @@
         </form>
     </section>
 
-    <!--JAVASCRIPT SWIPER-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <footer id="contato">
+        <div class="footer-box">
+            <h3>Empresa</h3>
+    
+            <a href="#">Sobre</a>
+            <a href="#">Recursos</a>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Carreiras</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>Perguntas Frequentes</h3>
+    
+            <a href="#">Conta</a>
+            <a href="#">Recursos</a>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Carreiras</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>Recursos</h3>
+    
+            <a href="#">YouTube</a>
+            <a href="#">Playlist</a>
+            <a href="#">Funcionalidades</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>Redes Sociais</h3>
+    
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Define a direção do slide para horizontal
-            direction: 'horizontal',
-            // Ativa o loop, permitindo que o carrossel repita os slides infinitamente
-            loop: true,
-
-            // Define a paginação (os pontos indicadores de slides)
-            pagination: {
-                el: '.swiper-pagination', // Seleciona o elemento de paginação
-            },
-
-            // Define os botões de navegação (avançar e voltar)
-            navigation: {
-                nextEl: '.swiper-button-next', // Botão para avançar
-                prevEl: '.swiper-button-prev', // Botão para voltar
-            },
-
-            // Define a barra de rolagem (scrollbar)
-            scrollbar: {
-                el: '.swiper-scrollbar', // Seleciona o elemento da barra de rolagem
-            },
+        const menuIcon = document.getElementById("menu-icon")
+        const menu = document.getElementById("menu")
+        menuIcon.addEventListener("click", () => {
+            menu.style.display == "none" ? menu.style.display = "flex" : menu.style.display = "none"
         })
     </script>
 </body>
