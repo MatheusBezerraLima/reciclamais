@@ -1,200 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Recicla+</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
+        <!--FONT AWESOME-->
+        <script
+            src="https://kit.fontawesome.com/108acab114.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
 
-    <link rel="stylesheet" href="./styles/default.css">
-    <link rel="stylesheet" href="./styles/index.css">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Recicla+</title>
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="#home" class="box-logo">
-                <img src="./imgs/logo-semfundo.png" alt="logo">
-            </a>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/default.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header data-aos="fade-down">
+            <div class="header-container">
+                <a href="#home" class="box-logo">
+                    <img src="./imgs/logo-semfundo.png" alt="logo" />
+                </a>
 
-            <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
-        </div>
+                <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+            </div>
 
-        <div class="menu" id="menu">
-            <a href="#sobre">Sobre nós</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#doar-residuos">Doar resíduos</a>
-            <a href="#contato">Contato</a>
+            <div class="menu" id="menu">
+                <a href="#sobre">Sobre nós</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#doar-residuos">Doar resíduos</a>
+                <a href="#contato">Contato</a>
 
-            <a href="./html/user-profile.html"><i class="fa-solid fa-user user-icon"></i></a>
-        </div>
+                <a href="./html/user-profile.html"
+                    ><i class="fa-solid fa-user user-icon"></i
+                ></a>
+            </div>
+        </header>
 
-    </header>
-
-    <section id="home">
-        <div class="blur"></div>
-        <div class="text-container-home">
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt culpa nam saepe voluptatem ad, nobis eaque. Placeat blanditiis quae ratione iusto perferendis, non in id corrupti, tenetur fugiat quaerat.</p>
-        </div>
-    </section>
-
-    <section id="sobre">
-        <h2>Sobre nós</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae et sint quibusdam at, reiciendis numquam quis a animi porro perspiciatis quo dignissimos temporibus quam aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis impedit ullam, accusamus laudantium eaque adipisci ut suscipit dolorum alias in fuga eligendi ducimus molestiae assumenda possimus? Ullam.<p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae et sint quibusdam at, reiciendis numquam quis a animi porro perspiciatis quo dignissimos temporibus quam aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis impedit ullam, accusamus laudantium eaque adipisci ut suscipit dolorum alias in fuga eligendi ducimus molestiae assumenda possimus? Ullam.<p>
-        <h2>Como doar resíduos? <a href="#doar-residuos" class="btn">Doar resíduos</a></h2>
-        <ul>
-            <li>
-                <h3>lorem ipsum</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
-
-            </li>
-            <li>
-                <h3>lorem ipsum</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
-            </li>
-            <li>
-                <h3>lorem ipsum</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
-            </li>
-            <li>
-                <h3>lorem ipsum</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi non alias harum corporis quisquam esse molestiae optio quibusdam cumque.</p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="produtos">
-        <h2>Produtos</h2>
-
-        <div class="cards-container">
-            <div class="card">
-                <div class="img-container">
-                    <img src="imgs/foto-user.jpg" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <h3>Produto</h3>
-                <div class="row-container">
-                    <a href="#">Comprar</a>
-
-                    <span>R$00,00</span>
+        <!-- HOME -->
+        <section id="home">
+            <video autoplay muted loop id="bg-video">
+                <source src="./imgs/bg-home.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos em HTML5.
+            </video>
+            <div class="gradient-overlay"></div>
+            <div class="content" data-aos="fade-up">
+                <div class="blur"></div>
+                <div class="text-container-home">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At nesciunt culpa nam saepe voluptatem ad, nobis eaque.
+                        Placeat blanditiis quae ratione iusto perferendis, non
+                        in id corrupti, tenetur fugiat quaerat.
+                    </p>
                 </div>
             </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="imgs/foto-user.jpg" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <h3>Produto</h3>
-                <div class="row-container">
-                    <a href="#">Comprar</a>
+        </section>
 
-                    <span>R$00,00</span>
+        <!-- SOBRE -->
+        <section id="sobre">
+            <h2 data-aos="fade-right">Sobre nós</h2>
+            <p data-aos="zoom-in">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum molestiae et sint quibusdam at, reiciendis numquam quis
+                a animi porro perspiciatis quo dignissimos temporibus quam
+                aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis
+                impedit ullam, accusamus laudantium eaque adipisci ut suscipit
+                dolorum alias in fuga eligendi ducimus molestiae assumenda
+                possimus? Ullam.
+            </p>
+            <p data-aos="zoom-in">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum molestiae et sint quibusdam at, reiciendis numquam quis
+                a animi porro perspiciatis quo dignissimos temporibus quam
+                aliquid sunt minus praesentium accusantium. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Iure, fugiat? Ea nobis
+                impedit ullam, accusamus laudantium eaque adipisci ut suscipit
+                dolorum alias in fuga eligendi ducimus molestiae assumenda
+                possimus? Ullam.
+            </p>
+            <h2 data-aos="fade-right">
+                Como doar?
+                <a href="#doar-residuos" class="btn">Doar resíduos</a>
+            </h2>
+            <ul data-aos="zoom-in">
+                <li>
+                    <h3>lorem ipsum</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellendus eligendi non alias harum corporis
+                        quisquam esse molestiae optio quibusdam cumque.
+                    </p>
+                </li>
+                <li>
+                    <h3>lorem ipsum</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellendus eligendi non alias harum corporis
+                        quisquam esse molestiae optio quibusdam cumque.
+                    </p>
+                </li>
+                <li>
+                    <h3>lorem ipsum</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellendus eligendi non alias harum corporis
+                        quisquam esse molestiae optio quibusdam cumque.
+                    </p>
+                </li>
+                <li>
+                    <h3>lorem ipsum</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellendus eligendi non alias harum corporis
+                        quisquam esse molestiae optio quibusdam cumque.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- PRODUTOS -->
+        <section id="produtos">
+            <h2 data-aos="fade-right">Produtos</h2>
+
+            <div class="cards-container">
+                <div class="card" data-aos="zoom-in">
+                    <div class="img-container">
+                        <img src="imgs/foto-user.jpg" alt="" />
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <h3>Produto</h3>
+                    <div class="row-container">
+                        <a href="#">Comprar</a>
+
+                        <span>R$00,00</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="img-container">
+                        <img src="imgs/foto-user.jpg" alt="" />
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <h3>Produto</h3>
+                    <div class="row-container">
+                        <a href="#">Comprar</a>
+
+                        <span>R$00,00</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="img-container">
+                        <img src="imgs/foto-user.jpg" alt="" />
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <h3>Produto</h3>
+                    <div class="row-container">
+                        <a href="#">Comprar</a>
+
+                        <span>R$00,00</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="img-container">
+                        <img src="imgs/foto-user.jpg" alt="" />
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <h3>Produto</h3>
+                    <div class="row-container">
+                        <a href="#">Comprar</a>
+
+                        <span>R$00,00</span>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="imgs/foto-user.jpg" alt="">
+        </section>
+
+        <!-- DOAR RESÍSUOS -->
+        <section id="doar-residuos">
+            <img src="imgs/form-img.png" alt="Ilustração" data-aos="fade-right" />
+
+            <form data-aos="fade-left">
+                <h2>Doar resíduos</h2>
+                <div class="input-container">
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo">
+                        <option value="">Selecione um tipo</option>
+                        <option value="plastico">Plástico</option>
+                        <option value="metal">Metal</option>
+                        <option value="paple">Papel</option>
+                        <option value="vidro">Vidro</option>
+                    </select>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <h3>Produto</h3>
-                <div class="row-container">
-                    <a href="#">Comprar</a>
+                <div class="input-container">
+                    <label for="residuo">Resíduo:</label>
+                    <input
+                        type="text"
+                        name="residuo"
+                        id="residuo"
+                        placeholder="Digite o nome do resísuo"
+                    />
+                </div>
+                <div class="input-container">
+                    <label for="quantidade">Quantidade: (kg)</label>
+                    <input
+                        type="number"
+                        name="quantidade"
+                        id="quantidade"
+                        placeholder="Digite a quantidade do resísuo em kg"
+                    />
+                </div>
+                <button class="submit-btn">Enviar</button>
+            </form>
+        </section>
 
-                    <span>R$00,00</span>
+        <!-- FOOTER -->
+        <footer id="contato" data-aos="fade-up">
+            <div class="footer-box">
+                <h3>Empresa</h3>
+
+                <a href="#">Sobre</a>
+                <a href="#">Recursos</a>
+                <a href="#">Funcionalidades</a>
+                <a href="#">Carreiras</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Perguntas Frequentes</h3>
+
+                <a href="#">Conta</a>
+                <a href="#">Recursos</a>
+                <a href="#">Funcionalidades</a>
+                <a href="#">Carreiras</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Recursos</h3>
+
+                <a href="#">YouTube</a>
+                <a href="#">Playlist</a>
+                <a href="#">Funcionalidades</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Redes Sociais</h3>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="imgs/foto-user.jpg" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <h3>Produto</h3>
-                <div class="row-container">
-                    <a href="#">Comprar</a>
+        </footer>
 
-                    <span>R$00,00</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- MENU SCRIPT -->
+        <script>
+            const menuIcon = document.getElementById("menu-icon");
+            const menu = document.getElementById("menu");
+            menuIcon.addEventListener("click", () => {
+                menu.style.display == "none"
+                    ? (menu.style.display = "flex")
+                    : (menu.style.display = "none");
+            });
+        </script>
 
-    <section id="doar-residuos">
-        <img src="imgs/form-img.png" alt="Ilustração">
-
-        <form>
-            <h2>Doar resíduos</h2>
-            <div class="input-container">
-                <label for="tipo">Tipo:</label>
-                <select name="tipo" id="tipo">
-                    <option value="">Selecione um tipo</option>
-                    <option value="plastico">Plástico</option>
-                    <option value="metal">Metal</option>
-                    <option value="paple">Papel</option>
-                    <option value="vidro">Vidro</option>
-                </select>
-            </div>
-            <div class="input-container">
-                <label for="residuo">Resíduo:</label>
-                <input type="text" name="residuo" id="residuo" placeholder="Digite o nome do resísuo">
-            </div>
-            <div class="input-container">
-                <label for="quantidade">Quantidade: (kg)</label>
-                <input type="number" name="quantidade" id="quantidade" placeholder="Digite a quantidade do resísuo em kg">
-            </div>
-            <button class="submit-btn">
-                Enviar
-            </button>
-        </form>
-    </section>
-
-    <footer id="contato">
-        <div class="footer-box">
-            <h3>Empresa</h3>
-    
-            <a href="#">Sobre</a>
-            <a href="#">Recursos</a>
-            <a href="#">Funcionalidades</a>
-            <a href="#">Carreiras</a>
-        </div>
-    
-        <div class="footer-box">
-            <h3>Perguntas Frequentes</h3>
-    
-            <a href="#">Conta</a>
-            <a href="#">Recursos</a>
-            <a href="#">Funcionalidades</a>
-            <a href="#">Carreiras</a>
-        </div>
-    
-        <div class="footer-box">
-            <h3>Recursos</h3>
-    
-            <a href="#">YouTube</a>
-            <a href="#">Playlist</a>
-            <a href="#">Funcionalidades</a>
-        </div>
-    
-        <div class="footer-box">
-            <h3>Redes Sociais</h3>
-    
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-    
-    <script>
-        const menuIcon = document.getElementById("menu-icon")
-        const menu = document.getElementById("menu")
-        menuIcon.addEventListener("click", () => {
-            menu.style.display == "none" ? menu.style.display = "flex" : menu.style.display = "none"
-        })
-    </script>
-</body>
+        <!-- AOS SCRIPT -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 100,
+                duration: 1000,
+            });
+        </script>
+    </body>
 </html>
