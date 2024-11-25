@@ -1,3 +1,9 @@
+:root {
+    --large-size: 15px;
+    --medium-size: 12px;
+    --small-size: 10px;
+}
+
 *, HTML, Body{
     margin: 0;
     padding: 0;
@@ -5,11 +11,12 @@
     line-height: 1.5;
     font-family: Arial;
     scroll-behavior: smooth;
+    font-size: var(--large-size);
 }
 
 header a{
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     padding: 1em;
     color: #187b1b;
@@ -71,14 +78,20 @@ header{
     gap: 10px;
 }
 .user-icon{
+    font-size: 2em;
     margin-left: 40px;
-    font-size: 25px;
     cursor: pointer;
 }
-
 .menu-icon {
     cursor: pointer;
     display: none;
+    font-size: 1.6em;
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: var(--medium-size);
+    }
 }
 
 @media (max-width: 905px) {
@@ -90,6 +103,7 @@ header{
         flex-direction: column;
         align-items: flex-start;
         display: none;
+        margin-left: -40px;
     }
 
     .user-icon {
@@ -98,5 +112,11 @@ header{
 
     .menu-icon {
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: var(--small-size);
     }
 }
